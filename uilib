@@ -1,5 +1,6 @@
 print('ok')
 
+
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -653,7 +654,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		OrionLib:MakeNotification({
 			Name = "Interface Hidden",
 			Content = "Destroying... Re Execute To Obtain Back",
-			Time = 5
+			Time = 1
 		})
 		WindowConfig.CloseCallback()
 		Orion:Destroy()
@@ -1765,3 +1766,4 @@ function OrionLib:Destroy()
 end
 
 return OrionLib
+
