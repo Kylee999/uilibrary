@@ -655,7 +655,6 @@ function OrionLib:MakeWindow(WindowConfig)
 			Content = "Destroying... Re Execute To Obtain Back",
 			Time = 3
 		})
-		WindowConfig.CloseCallback()
 		wait(0.6)
 		Orion:Destroy()
 	end)
