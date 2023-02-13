@@ -652,10 +652,11 @@ function OrionLib:MakeWindow(WindowConfig)
 		UIHidden = true
 		OrionLib:MakeNotification({
 			Name = "Interface Hidden",
-			Content = "Tap RightShift to reopen the interface",
+			Content = "Destroying... Re Execute To Obtain Back",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
+		OrionLib:Destroy()
 	end)
 
 	AddConnection(UserInputService.InputBegan, function(Input)
